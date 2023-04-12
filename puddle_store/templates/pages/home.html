@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="card-group">
+    {% for product in products %}
+      <div class="card">
+        <img src="{{product.image.url}}" class="card-img-top" alt="..." >
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-center">
+          <a href="{% url 'products:detail' product.slug %}"><button type="button" class="btn btn-outline-primary ">More info</button></a>
+        </div>
+      </div>
+    {% endfor %}
+</div>
+<div class="row" id="category_bar">
+  {% for category in categories  %}
+  <div class="col d-flex justify-content-center">
+  <a  class="fs-1 category_text" href="#">{{category.name}}</a>
+  </div>
+  {% endfor %}
+</div >
+
+{% endblock content %}
+

@@ -1,0 +1,18 @@
+.card-img-top{
+    height:300px;
+    width:100%;
+}
+.card{
+margin:20px;
+}
+#category_bar{
+    background-color: lightgray;
+    height: 100px;
+    margin-top: 20px;
+    width: 100%;
+    padding-top: 30px;
+}
+.category_text{
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card-group">
+   
+      <div class="card"  style="max-width:300px;">
+        <img src="{{item.image.url}}" class="card-img-top" >
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <p class="card-text">{{item.description}}</p>
+        </div>
+      </div>
+ 
+</div>
+{% endblock content %}
